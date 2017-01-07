@@ -1,0 +1,36 @@
+.first
+{
+    background-color:teal;
+	height:100px;
+	width:100%;
+	text-align:left;
+	
+}
+
+.maintext
+{
+	text-align:left;
+	color:#EAEAEA;
+	font:bold 50px arial;
+}
+
+
+#middlebox
+{
+	background-color:grey;
+	text-align:center;
+	height:600px;
+	width:100%;
+}
+
+
+.bottom
+{
+	text-align:center;
+	
+}
+
+.edit
+{
+	font:40px arial;
+}

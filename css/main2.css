@@ -1,0 +1,159 @@
+
+.main-header {
+    margin: 0 0 25px 0;
+    width: 100%;
+    color: #7b9095;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 5px solid #DF744A;
+    padding: 10px 0 20px 0;
+    background-image: linear-gradient(to top, #fff 40%, #fedcd2);
+    box-shadow: 
+                2px 2px 35px #7b9095;
+   
+/*    inset 2px 2px 35px #DF744A,*/
+}
+.header-pages {
+    margin: auto;
+    max-width: 100%;
+    padding: 10px 0 20px 0;
+    color: #7b9095;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 2px 2px 35px #7b9095;
+    max-height: 150px;
+}
+
+
+body {
+    margin: 0;
+    background: #bfd8d2;
+    width: 100%;
+}
+h1 {
+    font-size: 50px;
+    text-shadow: 3px 5px 15px #bfd8d2;
+}
+
+.icons-1 {
+    float: left;
+    width: 46.5%;
+    text-align: center;
+    margin: 0 -5% 0 15%;
+    padding 0;
+}
+
+.icons-2 {
+    float: left;
+    width: 46.5%%;
+    text-align: center;
+    margin: 0 10px;
+    clear: right;
+}
+
+.donut {
+    width: 150px;
+    background-color: white;
+    border: 2px solid #DF744A;
+/*    margin: auto;*/
+    border-radius: 100%;
+/*    box-shadow: 5px 5px 10px #999;*/
+}
+
+.twins {
+    width: 140px;
+    background-color: white;
+    border: 2px solid #DF744A;
+    border-radius: 100%;
+    padding: 5px
+}
+
+.icon-image {
+    max-width: 150px;
+    margin: auto;
+}
+
+div img {
+   border-radius: 100%;
+   box-shadow: 5px 5px 10px #999; 
+}
+
+
+
+.clear {
+    clear: both;
+    color: bisque;
+    text-align: center;
+    font-size: 1em;
+    padding-top: 15px;
+    margin: 0;
+}
+
+.social-icon {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+/******* About Page*******/
+
+nav {
+    max-width: 100%;
+/*    background: #fff;*/
+    margin:auto;
+/*    text-align: center;*/
+/*    padding: 5px 0;   */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    color: #fff; 
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+nav a:hover {
+    color: #581845;
+   
+}
+
+nav li {
+    width: 100%;
+    display: inline;
+    text-align: center;
+    padding: 8px;
+    background:#fedcd2;
+    box-shadow:  2px 2px  #7b9095;
+    margin: 0 3px;
+}
+
+.profile-photo {
+/*    display: block;*/
+     
+    max-width: 50%;
+    border: 2px solid #DF744A;
+    border-radius: 100%;
+
+}
+section p {
+    margin: auto;
+    padding-top: 60px;
+    text-align: center;
+
+}
+
+.about-box {
+    background-color: bisque;
+    max-width: 50%;
+    
+    
+}
+
+
