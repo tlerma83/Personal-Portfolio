@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Tamela Lerma</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<html lang="en">
+    <title>Tamela Lerma</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" ng-app="PersonalPage">
+        <ng-view></ng-view>
 
-
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-
-        <div ng-app = "PersonalPage">
-            <ng-view></ng-view>
-        </div>
 
         <script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="lib/node_modules/angular/angular.js"></script>
         <script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
         <script type="text/javascript" src="app/app.js"></script>
-        <script type="text/javascript" src="app/controllers/navCtrl.js"></script>
         <script type="text/javascript" src="app/controllers/homeCtrl.js"></script>
+        <script type="text/javascript" src="app/controllers/aboutCtrl.js"></script>
+        <script type="text/javascript" src="app/controllers/projectCtrl.js"></script>
     </body>
 </html>

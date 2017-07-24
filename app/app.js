@@ -8,9 +8,9 @@ app.config(function($routeProvider){
         templateUrl: "partials/home.html",
         controller: "HomeCtrl"
     })
-    .when("/ContactMe", {
-        templateUrl: "partials/contact.html",
-        controller: "ContactCtrl"
+    .when("/about", {
+        templateUrl: "partials/about.html",
+        controller: "AboutCtrl"
     })
     .when("/Projects", {
         templateUrl: "partials/projects.html",

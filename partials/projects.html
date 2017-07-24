@@ -1,25 +1,91 @@
-<div class="header">
-   <h1>Tamela Lerma</h1>
-    <h3>Junior Software Developer</h3>
+<!-- First Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+      </div>
 </div>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-3 col-lg-2 nav-background-color">
-        <nav class="navbar-fixed-side flex-nav">
-           <a href="#!/ContactMe"><img class="nav-icons" src="../images/alien.png">
-           <p>Contact</p></a>
-           <a href="#!/Projects"><img class="nav-icons" src="../images/unicorn.png">
-           <p>Projects</p></a>
-           <a href="#!/About"><img class="darth-icons" src="../images/Darth-Vader.png">
-           <p>About</p></a>
-        <!-- normal collapsible navbar markup -->
-        </nav>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">MY WORK</h3>
+    <p class="w3-center"><em>Here are some of my latest projects.<br> Click on the images to make them bigger</em>
+    </p><br>
+
+    <div class="container-fluid text-center bg-grey" id="portfolio">
+
+        <div class="row text-center">
+            <div class="col-sm-6">
+                <div class="thumbnail">
+                <img src="../images/packstar_1.png" alt="Paris" width="600" height="500" class="packstar-thumbnail">
+                    <div class="project-hover-thumbnail" data-toggle="modal"
+                    data-target="#fsModal">
+
+                        <p>A virtual suitcase written in AngularJS. This App utilizes Canvas, Firbase, and Materialize. Works on desktop and Android devices using responsive web design. Media devices set camera default to "environment" if available</p>
+                        <h3>Click Me!</h3>
+                    </div>
+                </div>
+
+                <p><strong>PackStar - Angular Application</strong></p>
+            </div>
+            <div class="col-sm-6">
+                <div class="thumbnail">
+                    <img src="images/me.jpg" alt="New York" width="400" height="300">
+                    <p><strong>New York</strong></p>
+                    <p>We built New York</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-sm-9 col-lg-10 main-content-div">
-     <p>Super Awesome Project</p>
-     <p>PackStar</p>
-     <a href="https://suitcase.tamelalerma.com/#!/">PackStar Project Link</a>
-      <!-- your page content -->
-    </div>
-  </div>
 </div>
+
+<div id="fsModal"
+     class="modal animated bounceIn"
+     role="dialog"
+     aria-labelledby="myModalLabel"
+     aria-hidden="true"
+     ng-controller="ProjectCtrl">
+    <div class="modal-dialog">
+        <!-- content -->
+        <div class="modal-content">
+            <h2>PackStar</h2>
+          <!-- body -->
+            <div class="modal-body">
+                <div class="modal-image-conatiner">
+                    <img src="../images/packstar_camera.png">
+                    <p>
+                        In ths App the media sources are checked to see which cameras are avaliable. If the rear camera is present, it will default to "environment". This functionality is included for android devices. A user can directly take a photo and have it update to a carousel. The image is drawn to a Canvas element then converted to a blob for storage and retrieval.
+                    </p>
+                </div>
+                <div class="modal-image-conatiner">
+                    <img src="../images/packstar_list.png">
+                    <p>
+                        The user can also save customized lists and all images for future retrieval. A counter is in place for all items showing how much has been packed. All lists and titles can be edited and deleted.
+                    </p>
+                </div>
+                <hr>
+                <div class="modal-image-conatiner2">
+                    <p>
+                        This Application was inspired by the Movie Clueless. I've always wanted a virtual closet and now I have one that I can travel with.
+                        <br>
+
+                        This is an Angular app that I used Materialize and Angular-Material with. Canvas was used for the webcam streaming and image capture. <br>The image is converted from a string of pixels to a blob object then stored with Firebase storage. Responsive web design was used <br>so the App can be used on desktop and android devices.
+                    </p>
+                    <p>View the project site <a href="https://suitcase.tamelalerma.com/#!/">here</a></p>
+                    <p>and</p>
+                    <p>Check out my Repo for this project on <a href="https://github.com/tlerma83/suitcase">Github!</a></p>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-dismiss="modal">close</button>
+            </div>
+        </div>
+    <!-- content -->
+    </div>
+  <!-- dialog -->
+</div>
+<!-- modal -->
+
+
+<div ng-include="'partials/techStack.html'"></div>
+

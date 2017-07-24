@@ -1,56 +1,248 @@
-html, body {
-  height: 100%;
-  margin: 0, auto;
-  background-color: hotpink; }
-
-.header {
-  background-color: navy;
-  margin-top: 0;
-  padding-top: 0;
-  width: 100%;
-  height: 20%;
-  position: absolute;
-  top: 0; }
-
-.container-fluid {
-  height: 100%;
-  position: fixed;
-  top: 20%; }
-
-.nav-background-color {
-  height: 100%;
-  padding-top: 50px; }
-
-.flex-nav {
-  display: flex;
-  flex-direction: column; }
-
-.nav-icons {
-  width: 46.5%;
-  border-radius: 100%;
-  border: 1px solid #DF744A;
-  vertical-align: middle;
-  margin: 15% 0 0 27%; }
-
-.darth-icons {
-  width: 46.5%;
-  border-radius: 100%;
-  border: 2px solid #DF744A;
-  margin: 15% 0 0 27%;
-  background-color: white; }
-
-.flex-nav p {
-  text-align: center; }
-
-.main-content-div {
-  background-color: salmon;
-  height: 100%; }
-
-.container-fluid {
-  background-color: white;
+.landing-page-background {
+  height: 600px;
   width: 100%; }
 
-.row {
-  height: 100%; }
+.nav-icons {
+  width: 30px;
+  height: auto;
+  margin: 10px 8px 0; }
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #77bfc7;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0; }
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important; }
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #f4511e !important;
+  background-color: #fff !important; }
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important; }
+
+/* Create a Parallax Effect */
+.bgimg-2, .bgimg-3, .bgimg-4 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* First image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/images/githubphoto.jpg");
+  min-height: 400px; }
+
+/* Second image */
+.bgimg-4 {
+  background-image: url("/images/unipop.gif");
+  min-height: 400px; }
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/images/astronaut.jpg");
+  height: 400px; }
+
+.w3-display-middle {
+  left: 0 !important;
+  top: 10%;
+  transform: translate(10%, 13%);
+  height: 70%; }
+
+.div-containing-profile-photo {
+  background: rgba(35, 35, 35, 0.6) !important;
+  height: 90%;
+  width: 100%; }
+
+.div-containing-profile-photo h1 {
+  padding-top: 15px; }
+
+.div-containing-profile-photo h5, h3 {
+  padding: 15px 20px 0 20px;
+  margin-top: 0; }
+
+@media only screen and (max-width: 550px) {
+  .w3-display-middle {
+    height: 50%;
+    width: 60%;
+    left: 35%;
+    transform: translate(35%, 30%); }
+
+  .div-containing-profile-photo {
+    height: 90%;
+    background: rgba(35, 35, 35, 0.9) !important;
+    padding-top: 20px;
+    margin-top: 15px; }
+
+  .profile-photo {
+    width: 70%;
+    height: auto;
+    margin-top: 5px; } }
+.slideanim {
+  vertical-align: middle; }
+
+#technologies img {
+  width: 100px;
+  height: auto;
+  margin: 15px; }
+
+.thumbnail {
+  position: relative; }
+
+.project-hover-thumbnail {
+  color: transparent;
+  top: 4px;
+  position: absolute;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px); }
+
+.project-hover-thumbnail:hover {
+  color: white;
+  position: absolute;
+  background-color: rgba(244, 81, 30, 0.9);
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  padding-top: 45px; }
+
+.packstar-thumbnail {
+  padding-bottom: 6px; }
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden; }
+
+.modal-dialog {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0; }
+
+.modal-content {
+  position: absolute;
+  top: 8%;
+  right: 4%;
+  bottom: 4%;
+  left: 4%;
+  border: 2px solid #3c7dcf;
+  border-radius: 0;
+  box-shadow: none; }
+
+.modal-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  padding: 10px;
+  background: #6598d9;
+  border: 0; }
+
+.modal-title {
+  font-weight: 300;
+  font-size: 2em;
+  color: #fff;
+  line-height: 30px; }
+
+.modal-body {
+  position: absolute;
+  top: 50px;
+  bottom: 60px;
+  width: 100%;
+  font-weight: 300;
+  overflow: auto; }
+
+.modal-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  padding: 10px;
+  background: #f1f3f5; }
+
+.btn {
+  height: 40px;
+  border-radius: 0; }
+  .btn:focus, .btn:active, .btn:active:focus {
+    box-shadow: none;
+    outline: none; }
+
+.btn-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px; }
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  font-weight: 300;
+  font-size: 1.6rem;
+  border: 1px solid #36a940;
+  border-bottom: 3px solid #36a940;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
+  .btn-primary:active,
+  .btn-primary:hover:active,
+  .btn-primary:focus:active,
+  .btn-primary:active:active {
+    border-bottom: 1px solid #36a940; }
+
+.btn-default,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+  background: #bfc5ce;
+  border: 1px solid #a2aab8;
+  border-bottom: 3px solid #a2aab8; }
+  .btn-default:active,
+  .btn-default:hover:active,
+  .btn-default:focus:active,
+  .btn-default:active:active {
+    border-bottom: 1px solid #a2aab8; }
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  color: #cc7272;
+  background: transparent;
+  border: 0; }
+
+.modal-content h2 {
+  text-align: center; }
+
+.modal-image-conatiner {
+  width: 100%;
+  height: auto;
+  margin-bottom: 4em;
+  text-align: center; }
+
+.modal-image-conatiner p {
+  text-align: justify; }
+
+.modal-image-conatiner img {
+  width: 60%;
+  height: auto;
+  margin-bottom: 1em; }
+
+.modal-image-conatiner2 p {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

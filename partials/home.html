@@ -1,29 +1,38 @@
-<div class="header">
-   <h1>Tamela Lerma</h1>
-    <h3>Junior Software Developer</h3>
-</div>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header navbar-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="https://www.linkedin.com/in/tamela-lerma-baa9a7b9/"><img class="nav-icons" src="/images/001-linked-in-square-button.png"></a>
+                <a href="https://github.com/tlerma83"><img class="nav-icons" src="/images/002-github-character.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#technologies">TECHNOLOGIES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<div>
-
-
-</div>
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-3 col-lg-2 nav-background-color">
-        <nav class="navbar-fixed-side flex-nav">
-           <a href="#!/ContactMe"><img class="nav-icons" src="../images/alien.png">
-           <p>Contact</p></a>
-           <a href="#!/Projects"><img class="nav-icons" src="../images/unicorn.png">
-           <p>Projects</p></a>
-           <a href="#!/About"><img class="darth-icons" src="../images/Darth-Vader.png">
-           <p>About</p></a>
-        <!-- normal collapsible navbar markup -->
-        </nav>
+    <img class="landing-page-background" src="images/coffee.gif">
+    <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center landing-namespace">
+        <div class="div-containing-profile-photo">
+            <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Tamela Lerma</h1>
+            <h5 class="w3-hide-large" style="white-space:nowrap">Tamela Lerma</h5>
+            <h3 class="w3-hide-medium w3-hide-small">Junior Software Developer</h3>
+            <img src="images/profilephoto.png" alt="me" class="img-circle profile-photo">
+        </div>
     </div>
-    <div class="col-sm-9 col-lg-10 main-content-div">
-     <p>Sweet Bio Goes here</p>
-      <!-- your page content -->
-    </div>
-  </div>
-</div>
+</header>
+
+<br>
+
+<div ng-include="'partials/about.html'"></div>
